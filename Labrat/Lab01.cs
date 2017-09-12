@@ -37,7 +37,7 @@ namespace Labrat
         }
         public static void Tehtava2()
         {
-            //Tee ohjelma, jossa annetaan oppilaalle koulunumero seuraavan taulukon mukaan (pistemäärä kysytään ja ohjelma tulostaa numeron)
+            //Tee ohjelma, jossa annetaan oppilaalle koulunumero:
             int luku;
             Console.WriteLine("Anna Pistemaara>> ");
             luku = int.Parse(Console.ReadLine());
@@ -73,7 +73,8 @@ namespace Labrat
         }
         public static void Tehtava3()
         {
-            //summa ja keskiarvo 
+            //Tee ohjelma, joka kysyy käyttäjältä kolme lukua
+            // ja tulostaa niiden summan ja keskiarvon.
             int luku, luku2, luku3, yhteen;
             double keskia;
             Console.WriteLine("Anna ensimmainen luku ja paina entteria>> ");
@@ -93,7 +94,7 @@ namespace Labrat
         }
         public static void Tehtava4()
         {
-            //mihin luokkaan henkilö kuuluu 
+            //Mihin ikäluokkaan henkilö kuuluu
             int ika;
             Console.WriteLine("Anna ikasi ja paina entteria>> ");
             ika = int.Parse(Console.ReadLine());
@@ -125,7 +126,7 @@ namespace Labrat
         }
         public static void Tehtava6()
         {
-            //Laskee kulutuksen 
+            //Laskee kulutuksen autoillessa. 
             double luku, kulutus, hinta;
             Console.WriteLine("Anna matka >> ");
             luku = double.Parse(Console.ReadLine());
@@ -136,7 +137,7 @@ namespace Labrat
         }
         public static void Tehtava7()
         {
-            //onko vuosi karkausvuosi
+            //onko vuosi karkausvuosi?
             double luku;
             Console.WriteLine("Anna vuosi >> ");
             luku = double.Parse(Console.ReadLine());
@@ -209,7 +210,7 @@ namespace Labrat
                 j = luvut[i] % 2;
                 if (j == 0)
                 {
-                    Console.WriteLine("HEP!");
+                    Console.WriteLine("HEPpi!");
                 }
                 i++;
             }
@@ -346,65 +347,56 @@ namespace Labrat
         }
         public static void Tehtava15()
         {
-            Console.WriteLine("Anna luku, maksimissaan 6 >");
-            int luku = int.Parse(Console.ReadLine());
-            if (luku == 0)
+            //Kuusi (puu) tulostus
+            int taso;
+            Console.Write("Kuinka korkean puun haluat: ");
+            taso = int.Parse(Console.ReadLine());
+            for (int i = 0; i < taso - 2; i++)
             {
-                Console.Write(" ");
+                for (int j = 0; j < taso - i - 1; j++)
+                {
+                    Console.Write(" ");
+                }
+                for (int k = 0; k < i * 2 + 1; k++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+
             }
-            if (luku == 1)
+            //Puun juuri
+            for (int i = 0; i < 2; i++)
             {
-                Console.Write("\n               * \n * \n * ");
-            }
-            if (luku == 2)
-            {
-                Console.Write("\n               * \n              *** \n             *****");
-            }
-            if (luku == 3)
-            {
-                Console.Write("\n               * \n              *** \n             *****\n            *******");
-            }
-            if (luku == 4)
-            {
-                Console.Write("\n               * \n              *** \n             *****\n            ******* \n           *********");
-            }
-            if (luku == 5)
-            {
-                Console.Write("\n               * \n              *** \n             *****\n            ******* \n           ********* \n          ***********");
-            }
-            if (luku == 6)
-            {
-                Console.Write("\n               * \n              *** \n             *****\n            ******* \n           ********* \n          *********** \n         *************");
-            }
-            //tekee puun juuren
-            Console.Write("\n               *\n               *\n");
+                for (int x = 0; x < taso - 1; x++)
+                {
+                    Console.Write(" ");
+
+                }
+                Console.WriteLine("*");
             Console.ReadLine();
-        }
+            }
+}
         public static void Tehtava16()
         {
-            //Arvaa luku- peli
+            //Tee ohjelma, joka arpoo satunnaisluvun väliltä 0-100
+            // Tämän jälkeen ohjelman käyttäjää kehoitetaan arvaaman arvottu luku. 
+            //Ohjelman antaa vihjeen arvauksen jälkeen onko arvottu luku pienempi vai suurempi.
             Random rnd = new Random();
-            int randomi = rnd.Next(1, 10);
-            int luku = 0;
-            int yritykset = 1;
-            do
-            {
-                Console.WriteLine("Arvaa luku > l");
-                luku = int.Parse(Console.ReadLine());
-                if (luku > randomi)
-                {
-                    Console.WriteLine("Luku on pienempi");
-                    yritykset++;
-                }
-                if (luku < randomi)
-                {
-                    Console.WriteLine("Luku on suurempi");
-                    yritykset++;
-                }
-            } while (luku != randomi);
-            Console.WriteLine("Arvasit luvun oikein " + yritykset + " yrityksellä!");
+            int numero = rnd.Next(1, 100);
+            int arvaus=0, maara = 0;
+            Console.Write("Arvaa randomin valitsema numero väliltä 1-100: ");
+            
+            while (numero != arvaus)
+            {                
+                arvaus = int.Parse(Console.ReadLine());
+                maara++;
+                if (arvaus > numero)Console.Write("Se on pienempi: ");
+                if (arvaus < numero)Console.Write("Se on suurempi: ");
+                
+            } 
+            Console.WriteLine("Onneksi olkoon arvasit oikein! Siihen sinulla meni {0} yritystä...", maara);
             Console.ReadLine();
-        }
+            }
     }
 
 }

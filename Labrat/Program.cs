@@ -11,7 +11,7 @@ namespace Labrat
         static void Main(string[] args)
         {
             //Tehtävän numeroa vaihtamalla pääsee ajamaan seuraavan ohjelman.
-            Lab01.Tehtava16();
+            Lab01.Tehtava10();
         }
     }
 }
