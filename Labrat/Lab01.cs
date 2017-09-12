@@ -347,7 +347,7 @@ namespace Labrat
         }
         public static void Tehtava15()
         {
-            //Kuusi (puu) tulostus
+            //Kuusi (puu) tulostus, jossa kayttajalta kysytaan puun kokoa ja tulostetaan se * merkillä.
             int taso;
             Console.Write("Kuinka korkean puun haluat: ");
             taso = int.Parse(Console.ReadLine());
