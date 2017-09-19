@@ -10,8 +10,7 @@ namespace Labrat
     {
         static void Main(string[] args)
         {
-            //Tehtävän numeroa vaihtamalla pääsee ajamaan seuraavan ohjelman.
-            Lab01.Tehtava10();
+            Lab02.Autotiedot.autoinfo();
         }
     }
 }
