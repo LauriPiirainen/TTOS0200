@@ -48,6 +48,7 @@ namespace Labrat
             string syote14 = "11.11.11";
             
             */
+            /*
             do
             {
                 Hissi uus = new Hissi();
@@ -71,6 +72,7 @@ namespace Labrat
                     Console.WriteLine("Elevator is now in floor : {0}", uus.NykyinenKerros);
                 }
             } while (true);
+            */
             /*
             Vahvistin uus = new Vahvistin();
             do
@@ -93,6 +95,16 @@ namespace Labrat
                     Console.WriteLine("-> Amplifier volume is set to : {0}", uus.Aanenvoimakkuus);
                 }
             } while (true);*/
+
+
+
+
+
+
+
+
+
+
         }
     }
 }
