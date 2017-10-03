@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace Labrat
 {
-    class Lab04
-    {
+    
         public class Employee
         {
             public string Name { get; set; }
@@ -17,13 +16,14 @@ namespace Labrat
             {
                 return Name + " " + Profession + " " + Salary;
             }
-
-            public class Boss : Employee
-            {
-
-            }
-
-
-
         }
-}
+        public class Boss : Employee
+        {
+            public string Car { get; set; }
+            public int Bonus { get; set; }
+            public override string ToString()
+            {
+                return base.ToString() + Car + " " + Bonus;
+            }
+        }
+    }

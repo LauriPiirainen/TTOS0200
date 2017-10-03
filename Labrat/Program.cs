@@ -97,6 +97,23 @@ namespace Labrat
             } while (true);*/
 
 
+            //LAB 04!!!!!
+            Employee nro1 = new Employee();
+            nro1.Name = "Kirsi Kernel";
+            nro1.Profession = "Teatcher";
+            nro1.Salary = 1200;
+            Console.WriteLine(nro1.ToString());
+            Boss nro2 = new Boss();
+            nro2.Name = "Variksen Pekka";
+            nro2.Profession = "Kilpakuntoilija";
+            nro2.Salary = 7000;
+            nro2.Car = " Jalat";
+            nro2.Bonus = 4000;
+            Console.WriteLine(nro2.ToString());
+            nro1.Name = "Kirsi Kernel";
+            nro1.Profession = "Head Teatcher";
+            nro1.Salary = 4200;
+            Console.WriteLine(nro1.ToString());
 
 
 
