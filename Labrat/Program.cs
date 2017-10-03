@@ -98,27 +98,45 @@ namespace Labrat
 
 
             //LAB 04!!!!!
-            Employee nro1 = new Employee();
+            /*Employee nro1 = new Employee();
             nro1.Name = "Kirsi Kernel";
-            nro1.Profession = "Teatcher";
+            nro1.Profession = "teatcher";
             nro1.Salary = 1200;
             Console.WriteLine(nro1.ToString());
             Boss nro2 = new Boss();
             nro2.Name = "Variksen Pekka";
-            nro2.Profession = "Kilpakuntoilija";
+            nro2.Profession = "kilpakuntoilija";
             nro2.Salary = 7000;
-            nro2.Car = " Jalat";
+            nro2.Car = " jalat";
             nro2.Bonus = 4000;
             Console.WriteLine(nro2.ToString());
             nro1.Name = "Kirsi Kernel";
-            nro1.Profession = "Head Teatcher";
+            nro1.Profession = "head heatcher";
             nro1.Salary = 4200;
             Console.WriteLine(nro1.ToString());
-
-
-
-
-
+            */
+            Vehicle vekotin = new Vehicle();
+            vekotin.Name = "Jaguar";
+            vekotin.Model = "XE";
+            vekotin.ProductionYear = 2018;
+            vekotin.Color = "Punainen";
+            Console.WriteLine(vekotin.ToString());
+            Bike vekotin2 = new Bike();
+            vekotin2.Name = "Nishiki";
+            vekotin2.Model = "Cross";
+            vekotin2.ProductionYear = 2008;
+            vekotin2.Color = "Ruskea";
+            vekotin2.Vaihteisto = "Ratasvaihde";
+            vekotin2.VaihteistonMalli = "54321";
+            Console.WriteLine(vekotin2.ToString());
+            Boat vekotin3 = new Boat();
+            vekotin3.Name = "Riverseat";
+            vekotin3.Model = "2seater";
+            vekotin3.ProductionYear = 2015;
+            vekotin3.Color = "Sininen";
+            vekotin3.VeneenTyyppi = "Kajakki";
+            vekotin3.IstuintenMäärä = 2;
+            Console.WriteLine(vekotin3.ToString());
 
 
 
