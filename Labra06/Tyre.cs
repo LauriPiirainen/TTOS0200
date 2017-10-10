@@ -6,64 +6,29 @@ using System.Threading.Tasks;
 
 namespace Labra06
 {
-    class Tyre
+    class Renkaat : Ajoneuvo
     {
-        public string Manufacture { get; set; }
-        public string Model { get; set; }
-        public string Tyresize { get; set; }
-
-        public Tyre()
-        {
-
-        }
-        public Tyre(string valmistaja, string malli, string koko)
-        {
-            Manufacture = valmistaja;
-            this.Model = malli;
-            this.Tyresize = koko;
-        }
-
-        public override string ToString()
-        {
-            return "Valmistaja: " + Manufacture + " Malli:" + Model + " renkaan koko:" + Tyresize;
-        }
-    }
-
-    class Auto
-    {
-        public string Nimi { get; set; }
+        public string Merkki { get; set; }
         public string Malli { get; set; }
-        private const int maxRenkaat = 4;
-        private int lkmRenkaat = 0;
-        public string KokoNimi { get { return Nimi + " " + Malli; } }
-        public List<Tyre> Renkaat { get; }
+        public int Koko { get; set; }
 
-        public Auto()
+        public Renkaat()
+
         {
-            Renkaat = new List<Tyre>();
+
         }
 
-        public void AddTyre(Tyre rengas)
+        public Renkaat(string merkki, string malli, int koko)
         {
-            if (lkmRenkaat < maxRenkaat)
-            {
-                Renkaat.Add(rengas);
-                lkmRenkaat++;
-                Console.WriteLine("Rengas {0} lisätty ajoneuvoon {1}", rengas.Model, Nimi);
-            }
-            else
-            {
-                Console.WriteLine("No room for a new tyres..., sorry!");
-            }
+            Merkki = merkki;
+            Malli = malli;
+            Koko = koko;
         }
+
         public override string ToString()
+
         {
-            string s = "Kulkuneuvossa: " + Nimi + " malli :" + Malli + "\nrenkaat:";
-            foreach (Tyre r in Renkaat)
-            {
-                if (r != null) s += "\n-" + r.ToString();
-            }
-            return s;
+            return "Merkki: " + Merkki + " Malli: " + Malli + " Koko: " + Koko;
         }
     }
 }
