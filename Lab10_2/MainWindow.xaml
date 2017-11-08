@@ -7,6 +7,16 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <TextBox x:Name="Dollarit" HorizontalAlignment="Left" Margin="21,101,0,0" VerticalAlignment="Top" Width="142" Text="Dollarit" Background="{x:Null}" TextChanged="Valuutanvalinta_TextChanged" Height="22">
+        </TextBox>
+        <TextBox x:Name="dollari_arvo" HorizontalAlignment="Left" Height="22" Margin="163,101,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="66" RenderTransformOrigin="0.147,-0.071" TextChanged="ostomäärä_TextChanged" Background="{x:Null}"/>
+        <TextBlock x:Name="kurssi1" HorizontalAlignment="Left" Margin="74,123,0,0" TextWrapping="Wrap" Text="myyntikurssi: 0.8997" VerticalAlignment="Top" RenderTransformOrigin="-0.62,-1.22" Width="84" FontSize="9"/>
+        <TextBlock HorizontalAlignment="Left" Margin="21,85,0,0" TextWrapping="Wrap" Text="Dollarit" VerticalAlignment="Top" FontWeight="Bold" Width="57"/>
+        <TextBox x:Name="Eurot" HorizontalAlignment="Left" Margin="250,101,0,0" VerticalAlignment="Top" Width="142" Text="Eurot" Background="{x:Null}" Height="22">
+        </TextBox>
+        <TextBox x:Name="euro_arvo" HorizontalAlignment="Left" Height="22" Margin="392,101,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="66" RenderTransformOrigin="0.147,-0.071" TextChanged="maksumäärä_TextChanged" Background="{x:Null}"/>
+        <TextBlock x:Name="kurssi1_Copy" HorizontalAlignment="Left" Margin="250,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-0.62,-1.22" Width="137" FontSize="9"><Run FontWeight="Bold" Text="100 EUR "/><Run Text="Vastaa  "/><Run FontWeight="Bold" Text="111,15 USD"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="250,85,0,0" TextWrapping="Wrap" Text="Eurot" VerticalAlignment="Top" FontWeight="Bold"/>
+
     </Grid>
 </Window>

@@ -24,5 +24,43 @@ namespace Lab10_2
         {
             InitializeComponent();
         }
+
+        double number = 0;
+        double number2 = 0;
+
+        //dollareista euroiksi
+        private void ostomäärä_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (dollari_arvo.Text == null)
+            {
+                euro_arvo.Text = 0.ToString();
+            }
+            else
+            {
+                number = double.Parse(dollari_arvo.Text);
+                number2 = number * 0.8997;
+                euro_arvo.Text = number2.ToString("0.00"); //Kaksi desimaalia
+            }
+        }
+
+        //Euroista dollareiksi
+        private void maksumäärä_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (euro_arvo.Text == null)
+            {
+                dollari_arvo.Text = 0.ToString();
+            }
+            else
+            {
+                number = double.Parse(euro_arvo.Text);
+                number2 = number / 0.8997;
+                dollari_arvo.Text = number2.ToString("0.00"); //Kaksi desimaalia
+            }
+        }
+
+        private void Valuutanvalinta_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
