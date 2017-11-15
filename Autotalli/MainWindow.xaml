@@ -10,10 +10,11 @@
         <!-- Ulompi stackpanel, elementit päällekkäin pinossa-->
         <StackPanel>
             <StackPanel Orientation="Horizontal">
-                <Button x:Name="btnHaeAutot" Content="Hae autot" Margin="5" />
-                <Button x:Name="btnHaeAudit" Content="Hae audit" Margin="5" />
+                <Button x:Name="btnHaeAutot" Content="Hae autot" Margin="5" Click="btnHaeAutot_Click" />
+                <Button x:Name="btnHaeAudit" Content="Hae audit" Margin="5" Click="btnHaeAudit_Click" />
+                <ComboBox x:Name="cmbAutot" Margin="5" SelectionChanged="cmbAutot_SelectionChanged" ></ComboBox>
             </StackPanel>
-            <DataGrid x:Name="dgAutot"></DataGrid>
+            <DataGrid x:Name="dgAutot" SelectionChanged="dgAutot_SelectionChanged"></DataGrid>
             <Image x:Name="imgAuto"></Image>
         </StackPanel>
     </Grid>
