@@ -1,0 +1,24 @@
+﻿<Window x:Class="Lab11._3wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab11._3wpf"
+        mc:Ignorable="d"
+        Title="Lottokone" Height="450" Width="650">
+    <Grid>
+
+        <ComboBox x:Name="Peli" HorizontalAlignment="Left" Margin="142,24,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="Lotto" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Viking Lotto" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Eurojackpot" HorizontalAlignment="Left" Width="118"/>
+        </ComboBox>
+        <Label Content="Valitse peli" HorizontalAlignment="Left" Margin="27,20,0,0" VerticalAlignment="Top" Width="110"/>
+        <Label Content="Rivien määrä" HorizontalAlignment="Left" Margin="27,76,0,0" VerticalAlignment="Top" Width="110"/>
+        <TextBox x:Name="Rivienmäärä" HorizontalAlignment="Left" Height="23" Margin="216,80,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="46"/>
+        <Button x:Name="Arvo" Content="Arvo" HorizontalAlignment="Left" Margin="67,130,0,0" VerticalAlignment="Top" Width="56" Click="Arvo_Click"/>
+        <Button x:Name="Tyhjennä" Content="Tyhjennä" HorizontalAlignment="Left" Margin="166,130,0,0" VerticalAlignment="Top" Width="56" Click="Tyhjennä_Click"/>
+        <TextBlock x:Name="Txtbox" HorizontalAlignment="Stretch" TextWrapping="Wrap" Text="" VerticalAlignment="Stretch" MinHeight="135" MinWidth="292" Width="142" Margin="284,46,66,10" />
+        <Label Content="Arvotut Rivit" HorizontalAlignment="Left" Margin="350,10,0,0" VerticalAlignment="Top" Width="159"/>
+    </Grid>
+</Window>
