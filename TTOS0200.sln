@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.12
+VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hello", "Hello\Hello.csproj", "{43D3A9D9-D831-46CD-BE33-1DE6770DB406}"
 EndProject
@@ -30,6 +30,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab11.3", "lab11.3\lab11.3.csproj", "{F4698D87-5533-44F0-8AAC-D1E66B350C32}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab11.4", "lab11.4\lab11.4.csproj", "{7DBA5777-CE72-4293-9AB9-7142CD779033}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oliokertaus", "Oliokertaus\Oliokertaus.csproj", "{B1CB29BA-4524-48FF-89CE-FEB30DEFB17D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +95,10 @@ Global
 		{7DBA5777-CE72-4293-9AB9-7142CD779033}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DBA5777-CE72-4293-9AB9-7142CD779033}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DBA5777-CE72-4293-9AB9-7142CD779033}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1CB29BA-4524-48FF-89CE-FEB30DEFB17D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1CB29BA-4524-48FF-89CE-FEB30DEFB17D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1CB29BA-4524-48FF-89CE-FEB30DEFB17D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1CB29BA-4524-48FF-89CE-FEB30DEFB17D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
